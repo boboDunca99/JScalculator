@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 30rem;
+  margin: 2% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.6rem;
+  background-color: rgb(233, 233, 197);
+}
+
+.calculator {
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  background-color: rgb(168, 168, 145);
+}
+
+.display {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.display:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators button {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: rgb(189, 189, 21);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators button:hover {
+  background-color: rgb(90, 90, 11);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operators button:active {
+  font-weight: bold;
+}
+
+.leftSide {
+  display: inline-block;
+}
+
+.numbers button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: rgb(133, 133, 94);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numbers button:hover {
+  background-color: rgb(87, 87, 57);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: rgb(54, 54, 12);
+}
+
+.numbers button:active {
+  font-weight: bold;
+}
+
+div.equal {
+  border: 1px solid;
+  border-radius: 1px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(71, 71, 15);
+  transition: all 0.2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: rgb(54, 54, 12);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: rgb(105, 105, 35);
+}
+
+button.equal:active {
+  font-weight: bold;
+}
